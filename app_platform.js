@@ -37,7 +37,7 @@ app.get('/server_info', (req, res) => {
             const data = appVerMap[reqAppVer];
             result[reqAppVer] = {
                 name: data.name,
-                api: data.api
+                url: data.url
             };
             res.json({
                 code: 1,
